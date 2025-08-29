@@ -1,0 +1,19 @@
+{
+    "files.associations": {
+        "drv_usb.h": "c",
+        "zbhci.h": "c",
+        "zb_common.h": "c",
+        "xutility": "c",
+        "xmemory": "c",
+        "exception": "c",
+        "type_traits": "c",
+        "cstdio": "c",
+        "algorithm": "c",
+        "tl_common.h": "c",
+        "array": "c",
+        "string": "c",
+        "string_view": "c",
+        "zcl_include.h": "c",
+        "samplegateway.h": "c"
+    }
+}

@@ -1,0 +1,5 @@
+DRC Rules Export File for PCB: F:\smart_home\Ó²¼þ×ÊÁÏ\ZYZB010PCB_ASCII\ZYZB010.PcbDoc
+RuleKind=ShortCircuit|RuleName=ShortCircuit|Scope=Board|Allowed=0
+RuleKind=Clearance|RuleName=Clearance|Scope=Board|Minimum=4.02
+RuleKind=SolderMaskExpansion|RuleName=SolderMaskExpansion|Scope=Board|Minimum=2.00
+RuleKind=Width|RuleName=Width|Scope=Board|Minimum=3.94

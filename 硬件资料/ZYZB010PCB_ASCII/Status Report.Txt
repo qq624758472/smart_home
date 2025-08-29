@@ -1,0 +1,12 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : Project [Free Documents]
+   Generated File[ZYZB010.TXT]
+   Generated File[ZYZB010.LDP]
+   Generated File[ZYZB010.DRR]
+
+
+Files Generated   : 3
+Documents Printed : 0
+
+Finished Output Generation At 11:41:48 On 2025/3/15

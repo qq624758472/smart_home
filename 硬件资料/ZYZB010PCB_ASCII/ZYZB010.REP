@@ -1,0 +1,292 @@
+*************************************************************
+FileName = ZYZB010.GBR
+AutoAperture = True
+*************************************************************
+Generating : KeepOutLayer
+      File : ZYZB010.GKO
+
+    Adding Layer      : KeepOutLayer
+
+
+Used DCodes :
+    D76
+*************************************************************
+
+*************************************************************
+Generating : BottomSolder
+      File : ZYZB010.GBS
+
+    Adding Layer      : BottomSolder
+
+    Adding Layer      : BottomLayer
+
+    Adding Layer      : MultiLayer
+
+
+Used DCodes :
+    D38
+    D39
+    D40
+*************************************************************
+
+*************************************************************
+Generating : TopSolder
+      File : ZYZB010.GTS
+
+    Adding Layer      : TopSolder
+
+    Adding Layer      : TopLayer
+
+    Adding Layer      : MultiLayer
+
+
+Used DCodes :
+    D26
+    D27
+    D28
+    D29
+    D30
+    D31
+    D32
+    D33
+    D34
+    D35
+    D36
+    D37
+    D38
+    D39
+    D40
+*************************************************************
+
+*************************************************************
+Generating : TopPaste
+      File : ZYZB010.GTP
+
+    Adding Layer      : TopPaste
+
+    Adding Layer      : TopLayer
+
+    Adding Layer      : MultiLayer
+
+
+Used DCodes :
+    D15
+    D16
+    D17
+    D18
+    D19
+    D20
+    D21
+    D22
+    D23
+    D24
+    D25
+*************************************************************
+
+*************************************************************
+Generating : TopOverlay
+      File : ZYZB010.GTO
+
+    Adding Layer      : TopOverlay
+
+
+Used DCodes :
+    D10
+    D11
+    D12
+    D13
+    D14
+*************************************************************
+
+*************************************************************
+Generating : Top Pad Master
+      File : ZYZB010.GPT
+
+    Adding Layer      : TopLayer
+
+    Adding Layer      : MultiLayer
+
+
+Used DCodes :
+    D15
+    D16
+    D17
+    D18
+    D19
+    D20
+    D21
+    D22
+    D23
+    D24
+    D25
+    D69
+    D70
+    D71
+*************************************************************
+
+*************************************************************
+Generating : Bottom Pad Master
+      File : ZYZB010.GPB
+
+    Adding Layer      : BottomLayer
+
+    Adding Layer      : MultiLayer
+
+
+Used DCodes :
+    D69
+    D70
+    D71
+*************************************************************
+
+*************************************************************
+Generating : BottomLayer
+      File : ZYZB010.GBL
+
+    Adding Layer      : BottomLayer
+
+    Adding Layer      : MultiLayer
+
+
+Used DCodes :
+    D10
+    D42
+    D43
+    D47
+    D50
+    D69
+    D70
+    D71
+    D72
+    D73
+    D75
+*************************************************************
+
+*************************************************************
+Generating : TopLayer
+      File : ZYZB010.GTL
+
+    Adding Layer      : TopLayer
+
+    Adding Layer      : MultiLayer
+
+
+Used DCodes :
+    D10
+    D11
+    D12
+    D15
+    D16
+    D17
+    D18
+    D19
+    D20
+    D21
+    D22
+    D23
+    D24
+    D25
+    D41
+    D42
+    D43
+    D44
+    D45
+    D46
+    D47
+    D48
+    D49
+    D50
+    D51
+    D52
+    D53
+    D54
+    D55
+    D56
+    D57
+    D58
+    D59
+    D60
+    D61
+    D62
+    D63
+    D64
+    D65
+    D66
+    D67
+    D68
+    D69
+    D70
+    D71
+    D72
+    D73
+*************************************************************
+
+*************************************************************
+Generating : MidLayer1
+      File : ZYZB010.G1
+
+    Adding Layer      : MidLayer1
+
+    Adding Layer      : MultiLayer
+
+
+Used DCodes :
+    D41
+    D44
+    D50
+    D69
+    D70
+    D71
+    D72
+    D73
+*************************************************************
+
+*************************************************************
+Generating : MidLayer2
+      File : ZYZB010.G2
+
+    Adding Layer      : MidLayer2
+
+    Adding Layer      : MultiLayer
+
+
+Used DCodes :
+    D10
+    D11
+    D44
+    D50
+    D69
+    D70
+    D71
+    D72
+    D73
+    D74
+*************************************************************
+
+*************************************************************
+Generating : Drill Drawing
+      File : ZYZB010.GD1
+
+    Adding Drill Pair : TopLayer-BottomLayer
+
+    Adding Layer      : DrillDrawing
+
+
+Used DCodes :
+    D77
+    D78
+*************************************************************
+
+*************************************************************
+Generating : Drill Guide
+      File : ZYZB010.GG1
+
+    Adding Drill Pair : TopLayer-BottomLayer
+
+    Adding Layer      : DrillGuide
+
+
+Used DCodes :
+    D77
+*************************************************************
+
