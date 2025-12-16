@@ -188,7 +188,7 @@ extern "C" {
 
 // DEBUG
 #if UART_PRINTF_MODE
-	#define	DEBUG_INFO_TX_PIN	    GPIO_PB1//GPIO_PD7//GPIO_PC4//print
+	#define	DEBUG_INFO_TX_PIN	    GPIO_PD7 //GPIO_PB1//GPIO_PD7//GPIO_PC4//print
 #endif
 /*******************************************************************************************************
 *********************8258Dongle with 32 Pins: End*****************************************************

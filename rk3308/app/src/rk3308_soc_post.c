@@ -2377,7 +2377,7 @@ void resetr_test(void)
     unsigned int value = 0;
     int resetrHdl = -1;
 #if 0
-	g_resetr_addr = devm_map(RESETR_BASE_ADDR, RESETR_SIZE, &resetrHdl);
+	g_resetr_addr = (RESETR_BASE_ADDR, RESETR_SIZE, &resetrHdl);
 	if(g_resetr_addr == NULL)
 	{
 		LOG("mram_test: mmap fail!\n");
@@ -2629,7 +2629,7 @@ void flash_write(unsigned int offset, unsigned int value)
     char cmd[256] = {0};
 
     // 1、先打开临时文件 /home/root/flashwt-tmp
-    hdl = open(flashBufFile, O_RDWR | O_CREAT | O_TRUNC); //| O_SYNC);
+    hdl = open(flashBufFile, O_RDWR | O_CREAT | O_TRUNC, 0644); //| O_SYNC);
     if (hdl < 0)
     {
         LOG("cannot open %s\n", flashBufFile);
@@ -2851,7 +2851,7 @@ int create_mtd3_head_file(app_head *appHead)
     int fid, wtlen;
 
     // 打开app-head二进制文件
-    fid = open(APP_HEAD_UP_FILE, O_RDWR | O_CREAT); // |O_DIRECT);
+    fid = open(APP_HEAD_UP_FILE, O_RDWR | O_CREAT, 0644); // |O_DIRECT);
     if (fid < 0)
     {
         LOG("%s file open fail!\n", APP_HEAD_UP_FILE);

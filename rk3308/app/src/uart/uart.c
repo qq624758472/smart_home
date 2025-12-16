@@ -137,7 +137,7 @@ void rs422_send(unsigned char id)
 {
     int wr_static;
     int fd;
-    char buffer[10] = {0x00, 0x11, 0x22, 0x33, 0x44, 0x55, 0x66, 0x77, 0x88, 0x99};
+    char buffer[10] = {0xCD, 0xAB, 0xCD, 0xAB, 0xB2, 00, 00, 00, 00, 0xFF};
     char *uart1 = "/dev/ttyS";
     char uartx[32];
 
@@ -151,8 +151,8 @@ void rs422_send(unsigned char id)
     else
     {
         LOG("open %s is success.\n", uartx);
-        set_opt(fd, 115200, 8, 'O', 1); // 设置串口
-
+        // set_opt(fd, 115200, 8, 'O', 1); // 设置串口
+        set_opt(fd, 9600, 8, 'N', 1); // 设置串口
         wr_static = write(fd, buffer, 10);
         if (wr_static > 0)
         {
@@ -224,7 +224,6 @@ void open_join_network()
     }
 }
 
-
 void send_zigbee_to_light()
 {
     int id = 1;
@@ -237,7 +236,7 @@ void send_zigbee_to_light()
 
     rk_cmd *p = buffer;
     p->cmdHead = UART_HEAD;
-    p->cmd = 0x1; //发送zigbee数据
+    p->cmd = 0x1; // 发送zigbee数据
 
     memset(uartx, 0, sizeof(uartx));
     snprintf(uartx, sizeof(uartx), "%s%d", uart1, id);
@@ -558,7 +557,7 @@ void rs422_savefile(unsigned char id, int maxPkt)
     // 打开文件
     memset(savfName, 0, sizeof(savfName));
     snprintf(savfName, sizeof(savfName), "%s%d_recv.bin", "./", id);
-    savfiled = open(savfName, O_RDWR | O_CREAT); // |O_DIRECT);
+    savfiled = open(savfName, O_RDWR | O_CREAT, 0644); // |O_DIRECT);
     if (savfiled < 0)
     {
         LOG("open file=%s is failed.\n", savfName);
@@ -619,7 +618,7 @@ void rs422_savefile_rx_delay(unsigned char id, int maxPkt, unsigned int delay)
     // 打开文件
     memset(savfName, 0, sizeof(savfName));
     snprintf(savfName, sizeof(savfName), "%s%d_recv_rx_delay.bin", "/home/root/uart", id);
-    savfiled = open(savfName, O_RDWR | O_CREAT); // |O_DIRECT);
+    savfiled = open(savfName, O_RDWR | O_CREAT, 0644); // |O_DIRECT);
     if (savfiled < 0)
     {
         LOG("open file=%s is failed.\n", savfName);

@@ -481,7 +481,7 @@ void *Trans_server_handle(void *ptr)
     pthread_detach(pthread_self());
 
     snprintf(savfName, sizeof(savfName), "%s%s_recv.bin", "/run/media/mmcblk0p4/", "socket");
-    savfiled = open(savfName, O_RDWR | O_CREAT); // |O_DIRECT);
+    savfiled = open(savfName, O_RDWR | O_CREAT, 0644); // |O_DIRECT);
     if (savfiled < 0)
     {
         printf("open file=%s is failed.\n", savfName);
